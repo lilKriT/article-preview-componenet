@@ -7,12 +7,17 @@
   --light-grayish-blue: hsl(210, 46%, 95%);
 }
 
-html {
-  font-size: 10px;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.preview-section {
+  background-color: var(--light-grayish-blue);
+  min-height: 100vh;
+}
+
+.preview-section .article-preview {
+  
 }
