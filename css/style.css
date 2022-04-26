@@ -11,13 +11,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
 }
 
 .preview-section {
   background-color: var(--light-grayish-blue);
   min-height: 100vh;
+  /* font-size: 0.8125rem; */
+  display: flex;
+  align-items: center;
 }
 
 .preview-section .article-preview {
-  
+  width: 60rem;
+  margin: 0 auto 0;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+}
+
+.preview-section .article-preview .featured-image {
+  width: 100%;
+  height: auto;
+}
+
+.preview-section .content {
+  padding: 2rem;
 }
