@@ -28,13 +28,34 @@
   background-color: #fff;
   display: grid;
   grid-template-columns: 4fr 6fr;
+  border-radius: 1rem;
 }
 
 .preview-section .article-preview .featured-image {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 
 .preview-section .content {
   padding: 2rem;
+}
+
+.preview-section .bottom-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.preview-section .bottom-row .avatar {
+  display: flex;
+}
+
+.preview-section .bottom-row .personal-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-section .bottom-row img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100rem;
 }
