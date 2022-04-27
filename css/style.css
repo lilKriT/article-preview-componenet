@@ -54,6 +54,10 @@
   padding: 2rem;
 }
 
+.preview-section .content p{
+  margin-bottom: 2rem;
+}
+
 .preview-section .bottom-row {
   display: flex;
   justify-content: space-between;
