@@ -91,3 +91,15 @@
   padding: 12px;
   border-radius: 100px;
 }
+
+@media screen and (max-width: 768px) {
+  .article-preview {
+    margin: 1.5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 1fr;
+  }
+
+  .article-preview .featured-image {
+border-radius: 1rem 1rem 0 0;
+  }
+}
