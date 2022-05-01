@@ -14,10 +14,6 @@
   font-family: "Manrope", sans-serif;
 }
 
-img {
-  display: block;
-}
-
 .preview-section {
   background-color: var(--light-grayish-blue);
   min-height: 100vh;
@@ -33,6 +29,7 @@ img {
   display: grid;
   grid-template-columns: 4fr 6fr;
   border-radius: 1rem;
+  height: 700px;
 }
 
 .article-preview h2 {
@@ -69,9 +66,13 @@ img {
   /* background-color: red; */
 }
 
+.article-preview .bottom-row p {
+  margin: 0;
+}
+
 .article-preview .bottom-row .avatar {
   display: flex;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .article-preview .bottom-row .personal-info {
@@ -88,8 +89,4 @@ img {
 .article-preview .share {
   display: flex;
   flex-direction: column;
-}
-
-.article-previeww .share p {
-  margin: 0px;
 }
