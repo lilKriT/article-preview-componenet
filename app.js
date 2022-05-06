@@ -1,4 +1,6 @@
 const shareBtn = document.querySelector(".share-btn");
+const shareTooltip = document.querySelector(".share-tooltip");
+
 shareBtn.addEventListener('click', (e) => {
-    alert("clicking");
+    shareTooltip.classList.toggle("shown");
 })

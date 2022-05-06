@@ -100,10 +100,10 @@
   background-color: var(--grayish-blue);
 }
 
-.article-preview .share-popup {
+.article-preview .share-tooltip {
   position: absolute;
   background-color: var(--very-dark-grayish-blue);
-  display: flex;
+  display: none;
   align-items: center;
   padding: 1rem 2rem;
   border-radius: 1rem;
@@ -114,7 +114,11 @@
   font-size: 0.75rem;
 }
 
-.article-preview .share-popup::after {
+.article-preview .share-tooltip.shown {
+  display: flex;
+}
+
+.article-preview .share-tooltip::after {
   content: "";
   display: block;
   height: 0px;
@@ -129,7 +133,7 @@
   transform: translate(-50%, 95%);
 }
 
-.article-preview .share-popup p {
+.article-preview .share-tooltip p {
   color: var(--grayish-blue);
   text-transform: uppercase;
   letter-spacing: 4px;
