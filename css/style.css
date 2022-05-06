@@ -46,7 +46,7 @@
   width: 100%;
   height: auto;
   border-radius: 1rem 0 0 1rem;
-  background: center left / cover url("/img/drawers.jpg");
+  background: center left / cover url("../img/drawers.jpg");
 }
 
 .article-preview .content {
@@ -95,9 +95,9 @@
 }
 
 .article-preview .share-btn {
-  background: center / 16px var(--light-grayish-blue) url("/img/icon-share.svg")
+  background: center / 16px var(--light-grayish-blue) url("../img/icon-share.svg")
     no-repeat;
-  mask: url("/img/icon-share.svg");
+  mask: url("../img/icon-share.svg");
   /* background-color: red; */
   width: 32px;
   height: 32px;
@@ -107,7 +107,7 @@
 }
 
 .article-preview .share-btn:hover {
-  background: center / 16px var(--very-dark-grayish-blue) url("/img/icon-share-white.svg")
+  background: center / 16px var(--very-dark-grayish-blue) url("../img/icon-share-white.svg")
     no-repeat;
   transition: all 0.2s;
 }
@@ -175,12 +175,12 @@
 
   .article-preview .bottom-row .share-btn {
     background: center / 16px var(--light-grayish-blue)
-      url("/img/icon-share.svg") no-repeat;
+      url("../img/icon-share.svg") no-repeat;
   }
 
   .article-preview .bottom-row.tooltip-active .share-btn {
     background: center / 16px var(--desaturated-dark-blue)
-      url("/img/icon-share-white.svg") no-repeat;
+      url("../img/icon-share-white.svg") no-repeat;
   }
 
   .article-preview .bottom-row.tooltip-active .share-tooltip {
