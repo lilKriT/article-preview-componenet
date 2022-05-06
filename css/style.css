@@ -97,14 +97,19 @@
 .article-preview .share-btn {
   background: center / 16px var(--light-grayish-blue) url("/img/icon-share.svg")
     no-repeat;
+  mask: url("/img/icon-share.svg");
+  /* background-color: red; */
   width: 32px;
   height: 32px;
   border-radius: 100px;
   cursor: pointer;
+  transition: all 0.2s;
 }
 
 .article-preview .share-btn:hover {
-  background-color: var(--grayish-blue);
+  background: center / 16px var(--very-dark-grayish-blue) url("/img/icon-share-white.svg")
+    no-repeat;
+  transition: all 0.2s;
 }
 
 .article-preview .share-tooltip {
@@ -122,7 +127,7 @@
 }
 
 /* activating tooltip */
-.article-preview .bottom-row.bottom-row.tooltip-active .share-tooltip {
+.article-preview .bottom-row.tooltip-active .share-tooltip {
   display: flex;
 }
 
@@ -168,7 +173,17 @@
     border-radius: 0 0 1rem 1rem;
   }
 
-  .article-preview .bottom-row.bottom-row.tooltip-active .share-tooltip {
+  .article-preview .bottom-row .share-btn {
+    background: center / 16px var(--light-grayish-blue)
+      url("/img/icon-share.svg") no-repeat;
+  }
+
+  .article-preview .bottom-row.tooltip-active .share-btn {
+    background: center / 16px var(--desaturated-dark-blue)
+      url("/img/icon-share-white.svg") no-repeat;
+  }
+
+  .article-preview .bottom-row.tooltip-active .share-tooltip {
     display: none;
   }
 
