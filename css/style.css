@@ -50,9 +50,14 @@
 }
 
 .article-preview .content {
-  padding: 2.4rem;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
   display: flex;
   flex-direction: column;
+}
+
+.article-preview .content > * {
+  padding: 0 2.4rem;
 }
 
 .article-preview .content > p {
@@ -142,13 +147,7 @@
 
 .article-preview .mobile-share-tooltip {
   display: none;
-  position: absolute;
   background-color: var(--very-dark-grayish-blue);
-  top: 0;
-  left: -2.4rem;
-  right: 2.4rem;
-  width: 100%;
-  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
